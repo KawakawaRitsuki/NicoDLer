@@ -4,11 +4,22 @@
  "manifest_version": 2,
  "description": "ニコニコの動画を云々。",
  "permissions": [
-   "activeTab"
+   "activeTab",
+   "tabs",
+   "downloads",
+   "http://*/*",
+   "https://*/*"
  ],
  "background":{
    "scripts":  ["background.js"]
  },
+ "content_scripts": [{
+   "matches": [
+       "http://*/*",
+       "https://*/*"
+   ],
+   "js": ["jquery.js", "content.js"]
+  }],
  "page_action": {
    "default_icon": "icon.png",
    "default_title": "NicoDLer"
