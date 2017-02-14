@@ -1,6 +1,6 @@
 {
  "name": "NicoDLer",
- "version": "0.1a",
+ "version": "0.1",
  "manifest_version": 2,
  "description": "ニコニコの動画を云々。",
  "permissions": [
